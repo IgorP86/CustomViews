@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.igorr.myapplication.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="300dp"
+        android:layout_height="216dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="18dp">
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/content"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="49dp"
+        android:layout_marginTop="33dp"
+        android:text="На вторую активити"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/btAddRed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/content"
+        android:layout_below="@id/btnNext"
+        android:layout_centerVertical="true"
+        android:text="Красный фрагмент"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/btAddYellow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btAddRed"
+        android:layout_toRightOf="@id/content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Желтый фрагмент"
+        android:textAlignment="center" />
+</RelativeLayout>
